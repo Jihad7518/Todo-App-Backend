@@ -1,5 +1,3 @@
-
-
 //import th model
 const Todo = require("../models/Todo");
 
@@ -28,6 +26,8 @@ exports.getTodo = async(req,res) => {
         })
     }
 }
+
+
 exports.getTodoById = async(req,res) => {
     try {
         //fetch todo by id
@@ -51,3 +51,15 @@ exports.getTodoById = async(req,res) => {
         })
 
     } 
+    catch(err) {
+        console.error(err);
+        console.log(err);
+        res.status(500)
+        .json({
+            success:false,
+            error:err.message,
+            message:"Server Error",
+
+        })
+    }
+}
