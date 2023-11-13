@@ -1,7 +1,5 @@
 # Todo-App-Backend
 
-# Todo App Backend
-
 This is a simple Todo app backend created for the purpose of practicing backend development skills. It provides basic CRUD (Create, Read, Update, Delete) operations for managing a list of tasks.
 
 ## Features
